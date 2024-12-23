@@ -1,2 +1,2 @@
-# portfolio
-this is my graphics designing portfolio
+## Portfolio still under-work! 👷🏻
+
