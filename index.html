@@ -7,6 +7,103 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="style.css">
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        body.dark {
+            background-color: #121212;
+            color: white;
+        }
+        body.dark .glass {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        body:not(.dark) .light-text {
+            color: #000000;
+        }
+        body.dark .dark-text {
+            color: #ffffff;
+        }
+        body.dark .dark-section {
+            background-color: #1f1f1f;
+        }
+        body.dark .dark-box {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        body:not(.dark) .light-section {
+            background-color: #f7fafc;
+        }
+        body:not(.dark) .light-box {
+            background-color: #ffffff;
+        }
+        /* The switch - the box around the slider */
+        #theme-toggle-button {
+            font-size: 17px;
+            position: relative;
+            display: inline-block;
+            width: 7em;
+            cursor: pointer;
+        }
+        /* Hide default HTML checkbox */
+        #toggle {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        #container,
+        #patches,
+        #stars,
+        #button,
+        #sun,
+        #moon,
+        #cloud {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 0.25s;
+        }
+        /* night sky background */
+        #toggle:checked + svg #container {
+            fill: #2b4360;
+        }
+        /* move button to right when checked */
+        #toggle:checked + svg #button {
+            transform: translate(28px, 2.333px);
+        }
+        /* show/hide sun and moon based on checkbox state */
+        #sun {
+            opacity: 1;
+        }
+        #toggle:checked + svg #sun {
+            opacity: 0;
+        }
+        #moon {
+            opacity: 0;
+        }
+        #toggle:checked + svg #moon {
+            opacity: 1;
+        }
+        /* show or hide background items on checkbox state */
+        #cloud {
+            opacity: 1;
+        }
+        #toggle:checked + svg #cloud {
+            opacity: 0;
+        }
+        #stars {
+            opacity: 0;
+        }
+        #toggle:checked + svg #stars {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
