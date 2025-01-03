@@ -3,73 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavitra Patil | Freelance Graphic Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Pavitra Patil - Graphic Design Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-montserrat">
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">Pavitra Patil</h1>
-            <nav class="flex space-x-6">
-                <a href="#about" class="hover:text-blue-500">About</a>
-                <a href="#portfolio" class="hover:text-blue-500">Portfolio</a>
-                <a href="#contact" class="hover:text-blue-500">Contact</a>
-            </nav>
-        </div>
-    </header>
+<body class="bg-gray-100 font-sans">
 
-    <section id="hero" class="bg-blue-500 text-white py-20">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold">Hi, I'm Pavitra Patil</h2>
-            <p class="mt-4 text-lg">A 17-year-old aspiring freelance graphic designer. Creating clean, modern designs for your projects.</p>
-            <a href="#portfolio" class="mt-6 inline-block px-6 py-3 bg-white text-blue-500 rounded-lg shadow-lg hover:bg-blue-100">
-                View My Work
-            </a>
-        </div>
-    </section>
-
-    <section id="about" class="py-16 bg-gray-50">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">About Me</h2>
-            <p class="mt-4 text-lg text-gray-600">I'm new to graphic design and love experimenting with modern, clean visuals. Whether you're looking for stunning posters or digital designs, I'm here to help!</p>
-        </div>
-    </section>
-
-    <section id="software" class="py-16 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">Tools I Use</h2>
-            <p class="mt-4 text-lg text-gray-600">I specialize in using:</p>
-            <ul class="mt-6 space-y-4 text-lg">
-                <li>💻 Adobe Photoshop</li>
-                <li>🎨 Adobe Illustrator</li>
+    <!-- Navigation Bar -->
+    <nav class="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-3xl font-semibold">Pavitra Patil</a>
+            <ul class="flex space-x-6 text-white">
+                <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
             </ul>
         </div>
-    </section>
+    </nav>
 
-    <section id="portfolio" class="py-16 bg-gray-50">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold text-gray-800 text-center">Portfolio</h2>
-            <p class="mt-4 text-lg text-gray-600 text-center">Here are some of my recent works:</p>
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8" id="portfolio-gallery">
-                <!-- Images will be dynamically added via JavaScript -->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 px-6 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">My Work</h2>
+            <div id="portfolio-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Images will be added by JS -->
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-16 bg-white">
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-gray-200">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">Contact Me</h2>
-            <p class="mt-4 text-lg text-gray-600">📸 Contect via Instagram: <a href="https://www.instagram.com/kggraphics_" target="_blank" class="text-blue-500">@kggraphics_</a></p>
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Contact Me</h2>
+            <form action="#" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg space-y-4">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <textarea name="message" placeholder="Your Message" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+            </form>
         </div>
     </section>
-
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>© 2025 Pavitra Patil. All rights reserved.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
