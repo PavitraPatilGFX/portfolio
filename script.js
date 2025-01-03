@@ -10,10 +10,11 @@ const images = [
 // Render each image
 images.forEach(({ src, alt }) => {
     const imageCard = document.createElement("div");
-    imageCard.classList.add("relative", "group", "rounded-corners");
+    imageCard.classList.add("relative", "group", "m-2"); // Adjusted margin for closer spacing
+
     imageCard.innerHTML = `
         <img src="${src}" alt="${alt}" class="w-full rounded-lg shadow-md">
-        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity">
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex justify-center items-center transition-opacity rounded-lg">
             <p class="text-white text-lg font-semibold">${alt}</p>
         </div>
     `;
