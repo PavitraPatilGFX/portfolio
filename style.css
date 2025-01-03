@@ -8,10 +8,7 @@ header a {
     transition: color 0.3s ease;
 }
 
-.group:hover .group-hover\:opacity-100 {
-    opacity: 1;
-}
-
-.group:hover .group-hover\:translate-y-0 {
-    transform: translateY(0);
+.rounded-corners {
+    border-radius: 20px;
+    overflow: hidden;
 }
