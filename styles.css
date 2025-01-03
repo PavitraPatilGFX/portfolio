@@ -1,11 +1,11 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navigation Bar */
 nav {
-    background: linear-gradient(to right, #4e9cb6, #9c4d83, #f27696);
+    background-color: #2d3748;
 }
 
 nav ul {
@@ -19,6 +19,15 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* About Me Section */
+#about p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Portfolio Section */
@@ -76,16 +85,19 @@ nav ul li a:hover {
     font-size: 1.2rem;
 }
 
-/* Contact Form */
-input, textarea {
-    border-radius: 0.75rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    width: 100%;
+/* Contact Section */
+#contact p {
+    font-size: 1.2rem;
+    color: #4a5568;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    border: 1px solid #4e9cb6;
-    box-shadow: 0 0 0 3px rgba(78, 156, 182, 0.3);
+/* Custom Instagram Link */
+#contact a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3182ce;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
