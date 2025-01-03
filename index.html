@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavitra Patil - Graphic Design Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-50 font-montserrat">
 
     <!-- Navigation Bar -->
-    <nav class="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 p-6 shadow-lg rounded-b-xl">
+    <nav class="bg-blue-600 p-6 shadow-lg rounded-b-xl">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-white text-3xl font-semibold">Pavitra Patil</a>
             <ul class="flex space-x-6 text-white">
+                <li><a href="#about" class="hover:underline">About Me</a></li>
                 <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
                 <li><a href="#contact" class="hover:underline">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-6 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">About Me</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Hi, I'm Pavitra Patil, a passionate and enthusiastic graphic designer. 
+                Although I am new to the field, I am eager to grow and expand my skillset. 
+                My creativity knows no bounds, and I am excited to work on various projects, 
+                from posters to logos and everything in between!
+            </p>
+        </div>
+    </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-16 px-6 bg-white">
@@ -31,15 +46,12 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-6 bg-gray-200">
+    <section id="contact" class="py-16 px-6 bg-gray-100">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-8">Contact Me</h2>
-            <form action="#" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg space-y-4">
-                <input type="text" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <input type="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <textarea name="message" placeholder="Your Message" class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
-            </form>
+            <p class="text-lg text-gray-600">
+                You can contact me via Instagram at <a href="https://www.instagram.com/kggraphics_" target="_blank" class="text-blue-600 font-semibold">@kggraphics_</a>
+            </p>
         </div>
     </section>
 
