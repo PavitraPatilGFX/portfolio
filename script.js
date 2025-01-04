@@ -1,12 +1,3 @@
-// Preloader
-window.addEventListener("load", () => {
-    const preloader = document.getElementById("preloader");
-    preloader.style.opacity = "0"; // Fade out
-    setTimeout(() => {
-        preloader.style.display = "none"; // Hide after fade-out
-    }, 500); // Matches fade-out transition duration
-});
-
 // Portfolio Images
 const gallery = document.getElementById("portfolio-gallery");
 
@@ -25,8 +16,17 @@ images.forEach(({ src, alt }) => {
         <img src="${src}" alt="${alt}" class="rounded-lg">
         <div class="portfolio-image-overlay">
             <p>${alt}</p>
+            <button class="preview-button" data-src="${src}" aria-label="Preview ${alt}">Preview</button>
         </div>
     `;
 
     gallery.appendChild(imageCard);
+});
+
+// Handle Preview Button Click
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("preview-button")) {
+        const imageUrl = e.target.getAttribute("data-src");
+        window.open(imageUrl, "_blank");
+    }
 });
