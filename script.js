@@ -23,14 +23,10 @@ images.forEach(({ src, alt }) => {
     gallery.appendChild(imageCard);
 });
 
-// Ensure DOM is fully loaded before adding event listeners
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".preview-button").forEach((button) => {
-        button.addEventListener("click", (e) => {
-            const imageUrl = e.target.getAttribute("data-src");
-            if (imageUrl) {
-                window.open(imageUrl, "_blank");
-            }
-        });
-    });
+// Handle Preview Button Click
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("preview-button")) {
+        const imageUrl = e.target.getAttribute("data-src");
+        window.open(imageUrl, "_blank");
+    }
 });
