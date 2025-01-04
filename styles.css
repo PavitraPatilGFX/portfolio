@@ -9,6 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #2d3748;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    transition: opacity 0.5s ease; /* Smooth fade-out */
 }
 
 /* Animations */
