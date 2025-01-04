@@ -3,34 +3,46 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Navigation Bar */
-nav {
+/* Preloader */
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #2d3748;
 }
 
-nav ul {
-    list-style: none;
+/* Animations */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-nav ul li a {
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.animate-fade-in {
+    animation: fade-in 1s ease forwards;
 }
 
-/* About Me Section */
-#about p {
-    font-size: 1.1rem;
-    color: #4a5568;
-    line-height: 1.6;
-    max-width: 900px;
-    margin: 0 auto;
+.animate-slide-up {
+    animation: slide-up 1s ease 0.5s forwards;
 }
 
-/* Portfolio Section */
+/* Portfolio Grid */
 #portfolio-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -83,21 +95,4 @@ nav ul li a:hover {
 .portfolio-image-overlay p {
     color: white;
     font-size: 1.2rem;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.2rem;
-    color: #4a5568;
-}
-
-/* Custom Instagram Link */
-#contact a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #3182ce;
-}
-
-#contact a:hover {
-    text-decoration: underline;
 }
