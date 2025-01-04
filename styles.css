@@ -3,6 +3,64 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Loading Screen */
+#loading-screen {
+    display: flex;
+    background: #111827;
+    z-index: 50;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+#loading-screen.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loading-spinner {
+    border: 4px solid #fff;
+    border-top: 4px solid #2563eb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Text Animations */
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: text-slide 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+    opacity: 0;
+    animation: fade-in 1.2s ease-in forwards;
+}
+
+@keyframes text-slide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
 /* Portfolio Grid */
 #portfolio-gallery {
     display: grid;
@@ -56,23 +114,4 @@ body {
 .portfolio-image-overlay p {
     color: white;
     font-size: 1.2rem;
-}
-
-/* Style for Preview Button */
-.preview-button {
-    background-color: #ffffff;
-    color: #000000;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    font-size: 0.9rem;
-}
-
-.preview-button:hover {
-    background-color: #000000;
-    color: #ffffff;
-    transform: scale(1.1);
 }
