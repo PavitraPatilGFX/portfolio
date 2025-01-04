@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavitra Patil - Graphic Design Portfolio</title>
+    <title>Pavitra Patil - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50 font-montserrat">
 
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 bg-blue-600 flex justify-center items-center z-50">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-white"></div>
+    </div>
+
     <!-- Navigation Bar -->
-    <nav class="bg-blue-600 p-6 shadow-lg rounded-b-xl">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-3xl font-semibold">Pavitra Patil</a>
-            <ul class="flex space-x-6 text-white">
-                <li><a href="#about" class="hover:underline">About Me</a></li>
-                <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
-                <li><a href="#contact" class="hover:underline">Contact</a></li>
+    <nav class="bg-white shadow-md fixed top-0 w-full z-10">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <a href="#" class="text-blue-600 text-2xl font-bold">Pavitra Patil</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition">About Me</a></li>
+                <li><a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition">Portfolio</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- About Me Section -->
-    <section id="about" class="py-16 px-6 bg-white">
+    <section id="about" class="pt-32 pb-16 bg-gray-100">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8">About Me</h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 opacity-0 animate-fade-in">About Me</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto opacity-0 animate-slide-up">
                 Hi, I'm Pavitra Patil, a passionate and enthusiastic graphic designer. 
                 Although I am new to the field, I am eager to grow and expand my skillset. 
                 My creativity knows no bounds, and I am excited to work on various projects, 
@@ -36,7 +41,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-16 px-6 bg-white">
+    <section id="portfolio" class="py-16 bg-white">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-8">My Work</h2>
             <div id="portfolio-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,7 +51,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-6 bg-gray-100">
+    <section id="contact" class="py-16 bg-gray-100">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-bold text-gray-800 mb-8">Contact Me</h2>
             <p class="text-lg text-gray-600">
