@@ -98,11 +98,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6); /* Slightly lighter overlay for better visibility */
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     transition: opacity 0.3s ease;
     border-radius: 1rem;
 }
@@ -111,7 +112,28 @@ body {
     opacity: 1;
 }
 
+/* Preview Button */
+.preview-button {
+    background-color: #ffffff; /* Light background for contrast */
+    color: #000000; /* Dark text for visibility */
+    font-weight: 600;
+    padding: 0.75rem 1.5rem; /* Increased padding for better size */
+    border-radius: 0.5rem;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-size: 1rem; /* Larger font size */
+    margin-top: 1rem; /* Space between the text and button */
+}
+
+.preview-button:hover {
+    background-color: #2563eb; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.1);
+}
+
 .portfolio-image-overlay p {
     color: white;
     font-size: 1.2rem;
+    margin-bottom: 0.5rem; /* Space above the button */
 }
