@@ -1,6 +1,10 @@
 // Preloader
 window.addEventListener("load", () => {
-    document.getElementById("preloader").style.display = "none";
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0"; // Fade out
+    setTimeout(() => {
+        preloader.style.display = "none"; // Hide after fade-out
+    }, 500); // Matches fade-out transition duration
 });
 
 // Portfolio Images
