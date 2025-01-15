@@ -1,10 +1,17 @@
 function LoadingScreen() {
+  // Manage loading screen visibility with state
+  const [isLoading, setIsLoading] = React.useState(true);
+
   React.useEffect(() => {
-    window.addEventListener("load", () => {
-      const loadingScreen = document.getElementById("loading-screen");
-      if (loadingScreen) loadingScreen.classList.add("hidden");
-    });
+    const handleLoad = () => setIsLoading(false);
+    window.addEventListener("load", handleLoad);
+
+    // Cleanup the event listener on unmount
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
+
+  // If loading is false, do not render the loading screen
+  if (!isLoading) return null;
 
   return (
     <div id="loading-screen" className="fixed inset-0 bg-gray-900 flex justify-center items-center z-50">
@@ -105,4 +112,4 @@ function App() {
 }
 
 ReactDOM.createRoot(document.getElementById("react-root")).render(<App />);
-      
+    
