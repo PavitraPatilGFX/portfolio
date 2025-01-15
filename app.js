@@ -1,25 +1,3 @@
-function LoadingScreen() {
-  // Manage loading screen visibility with state
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    const handleLoad = () => setIsLoading(false);
-    window.addEventListener("load", handleLoad);
-
-    // Cleanup the event listener on unmount
-    return () => window.removeEventListener("load", handleLoad);
-  }, []);
-
-  // If loading is false, do not render the loading screen
-  if (!isLoading) return null;
-
-  return (
-    <div id="loading-screen" className="fixed inset-0 bg-gray-900 flex justify-center items-center z-50">
-      <div className="loading-spinner"></div>
-    </div>
-  );
-}
-
 function NavigationBar() {
   return (
     <nav className="bg-white shadow-md fixed top-0 w-full z-10">
@@ -102,7 +80,6 @@ function Contact() {
 function App() {
   return (
     <>
-      <LoadingScreen />
       <NavigationBar />
       <AboutMe />
       <Portfolio />
