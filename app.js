@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 // NavigationBar component with theme toggle
@@ -26,8 +26,8 @@ function AboutMe() {
   return (
     <section id="about" className="pt-32 pb-16 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4 dark:text-white animate-fade-in">About Me</h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto dark:text-gray-300 animate-fade-in">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 dark:text-white">About Me</h2>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto dark:text-gray-300">
           Hi, I'm Pavitra Patil, a passionate graphic designer, eager to expand my skills.
         </p>
       </div>
@@ -45,7 +45,7 @@ function Portfolio() {
   return (
     <section id="portfolio" className="py-16 bg-white dark:bg-gray-800">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8 dark:text-white animate-fade-in">My Work</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-8 dark:text-white">My Work</h2>
         <div id="portfolio-gallery" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map(({ src, alt }, index) => (
             <div key={index} className="portfolio-image-container">
@@ -73,7 +73,7 @@ function Contact() {
   return (
     <section id="contact" className="py-16 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8 dark:text-white animate-fade-in">Contact Me</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-8 dark:text-white">Contact Me</h2>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           You can contact me via Instagram at{" "}
           <a href="https://www.instagram.com/kggraphics_" target="_blank" className="text-blue-600 font-semibold dark:text-blue-400">
@@ -87,12 +87,19 @@ function Contact() {
 
 // App Component
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
+  // Toggle theme and store in localStorage
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    document.documentElement.classList.toggle("dark", theme === "light");
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    localStorage.setItem("theme", newTheme); // Save theme to localStorage
   };
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
   return (
     <>
