@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Welcome to Pavitra Patil's Portfolio! Here you can find all of design projects, including Posters, Banners, Logo, Youtube Thumbnail.">
-    <meta name="keywords" content="Pavitra Patil, Portfolio, Graphics Designer,  Food Posters, Logo, Banner">
+    <meta name="keywords" content="Pavitra Patil, Portfolio, Graphics Designer, Food Posters, Logo, Banner">
     <meta name="author" content="Pavitra Patil">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pavitra Patil - Portfolio</title>
@@ -11,60 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/favicon/favicon.ico">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body class="bg-gray-50 font-montserrat">
-
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="fixed inset-0 bg-gray-900 flex justify-center items-center z-50">
-        <div class="loading-spinner"></div>
-    </div>
-
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md fixed top-0 w-full z-10">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <a href="#" class="text-blue-600 text-2xl font-bold">Pavitra Patil</a>
-            <ul class="flex space-x-6">
-                <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition">About Me</a></li>
-                <li><a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition">Portfolio</a></li>
-                <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- About Me Section -->
-    <section id="about" class="pt-32 pb-16 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4 animate-text">About Me</h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in">
-                Hi, I'm Pavitra Patil, a passionate and enthusiastic graphic designer. 
-                Although I am new to the field, I am eager to grow and expand my skillset. 
-                My creativity knows no bounds, and I am excited to work on various projects, 
-                from posters to logos and everything in between!
-            </p>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-16 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8 animate-text">My Work</h2>
-            <div id="portfolio-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Images will be added by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8 animate-text">Contact Me</h2>
-            <p class="text-lg text-gray-600">
-                You can contact me via Instagram at 
-                <a href="https://www.instagram.com/kggraphics_" target="_blank" class="text-blue-600 font-semibold">@kggraphics_</a>
-            </p>
-        </div>
-    </section>
-
-    <script src="app.js"></script>
+    <div id="react-root"></div> <!-- React will render the entire app here -->
+    <script type="text/babel" src="app.js"></script>
 </body>
 </html>
