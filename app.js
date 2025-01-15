@@ -71,7 +71,8 @@ function Contact() {
           <a href="https://www.instagram.com/kggraphics_" target="_blank" className="text-blue-600 font-semibold">
             @kggraphics_
           </a>
-        </p>
+          <FontAwesomeIcon icon="fa-brands fa-instagram" />
+          </p>
       </div>
     </section>
   );
