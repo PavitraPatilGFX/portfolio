@@ -4,48 +4,30 @@ body {
 }
 
 /* Text Animations */
-.animate-text {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: text-slide 0.8s ease-out forwards;
-}
-
-.animate-fade-in {
-    opacity: 0;
-    animation: fade-in 1.2s ease-in forwards;
-}
-
-@keyframes text-slide {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes fade-in {
     to {
         opacity: 1;
     }
 }
 
-/* Portfolio Grid */
-#portfolio-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+.animate-fade-in {
+    opacity: 0;
+    animation: fade-in 1.5s ease-out forwards;
 }
 
+/* Portfolio Image Hover Effects */
 .portfolio-image-container {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .portfolio-image-container:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    filter: brightness(1.1);
 }
 
 .portfolio-image-container img {
@@ -65,7 +47,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Slightly lighter overlay for better visibility */
+    background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -79,28 +61,51 @@ body {
     opacity: 1;
 }
 
-/* Preview Button */
 .preview-button {
-    background-color: #ffffff; /* Light background for contrast */
-    color: #000000; /* Dark text for visibility */
+    background-color: #ffffff;
+    color: #000000;
     font-weight: 600;
-    padding: 0.75rem 1.5rem; /* Increased padding for better size */
+    padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     border: 2px solid #ffffff;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    font-size: 1rem; /* Larger font size */
-    margin-top: 1rem; /* Space between the text and button */
+    font-size: 1rem;
+    margin-top: 1rem;
 }
 
 .preview-button:hover {
-    background-color: #2563eb; /* Blue background on hover */
-    color: #ffffff; /* White text on hover */
+    background-color: #2563eb;
+    color: #ffffff;
     transform: scale(1.1);
 }
 
 .portfolio-image-overlay p {
     color: white;
     font-size: 1.2rem;
-    margin-bottom: 0.5rem; /* Space above the button */
+    margin-bottom: 0.5rem;
+}
+
+/* Dark Mode Styles */
+html {
+    background-color: #f8fafc;
+    color: #333;
+}
+
+html.dark {
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+
+.dark .bg-gray-100 {
+    background-color: #2d3748;
+}
+
+.dark .text-gray-600 {
+    color: #e5e7eb;
+}
+
+/* Additional Styling */
+.dark .text-blue-600 {
+    color: #3b82f6;
 }
