@@ -1,34 +1,41 @@
-function NavigationBar() {
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+
+// NavigationBar component with theme toggle
+function NavigationBar({ toggleTheme }) {
   return (
-    <nav className="bg-white shadow-md fixed top-0 w-full z-10">
+    <nav className="bg-white shadow-md fixed top-0 w-full z-10 transition duration-300 ease-in-out dark:bg-gray-800">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <a href="#" className="text-blue-600 text-2xl font-bold">Pavitra Patil</a>
+        <a href="#" className="text-blue-600 text-2xl font-bold dark:text-white">Pavitra Patil</a>
         <ul className="flex space-x-6">
-          <li><a href="#about" className="text-gray-600 hover:text-blue-600 transition">About Me</a></li>
-          <li><a href="#portfolio" className="text-gray-600 hover:text-blue-600 transition">Portfolio</a></li>
-          <li><a href="#contact" className="text-gray-600 hover:text-blue-600 transition">Contact</a></li>
+          <li><a href="#about" className="text-gray-600 hover:text-blue-600 transition dark:text-white dark:hover:text-blue-600">About Me</a></li>
+          <li><a href="#portfolio" className="text-gray-600 hover:text-blue-600 transition dark:text-white dark:hover:text-blue-600">Portfolio</a></li>
+          <li><a href="#contact" className="text-gray-600 hover:text-blue-600 transition dark:text-white dark:hover:text-blue-600">Contact</a></li>
         </ul>
+        <button onClick={toggleTheme} className="text-gray-600 dark:text-white">
+          <i className="fas fa-moon dark:hidden"></i>
+          <i className="fas fa-sun hidden dark:block"></i>
+        </button>
       </div>
     </nav>
   );
 }
 
+// AboutMe Component with smooth text animation
 function AboutMe() {
   return (
-    <section id="about" className="pt-32 pb-16 bg-gray-100">
+    <section id="about" className="pt-32 pb-16 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Hi, I'm Pavitra Patil, a passionate and enthusiastic graphic designer.
-          Although I am new to the field, I am eager to grow and expand my skillset.
-          My creativity knows no bounds, and I am excited to work on various projects,
-          from posters to logos and everything in between!
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 dark:text-white animate-fade-in">About Me</h2>
+        <p className="text-lg text-gray-600 max-w-3xl mx-auto dark:text-gray-300 animate-fade-in">
+          Hi, I'm Pavitra Patil, a passionate graphic designer, eager to expand my skills.
         </p>
       </div>
     </section>
   );
 }
 
+// Portfolio Component
 function Portfolio() {
   const images = [
     { src: "./assets/images/Pizza-Poster.png", alt: "Pizza Poster 🍕" },
@@ -36,9 +43,9 @@ function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="py-16 bg-white">
+    <section id="portfolio" className="py-16 bg-white dark:bg-gray-800">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">My Work</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-8 dark:text-white animate-fade-in">My Work</h2>
         <div id="portfolio-gallery" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map(({ src, alt }, index) => (
             <div key={index} className="portfolio-image-container">
@@ -61,14 +68,15 @@ function Portfolio() {
   );
 }
 
+// Contact Component
 function Contact() {
   return (
-    <section id="contact" className="py-16 bg-gray-100">
+    <section id="contact" className="py-16 bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">Contact Me</h2>
-        <p className="text-lg text-gray-600">
+        <h2 className="text-4xl font-bold text-gray-800 mb-8 dark:text-white animate-fade-in">Contact Me</h2>
+        <p className="text-lg text-gray-600 dark:text-gray-300">
           You can contact me via Instagram at{" "}
-          <a href="https://www.instagram.com/kggraphics_" target="_blank" className="text-blue-600 font-semibold">
+          <a href="https://www.instagram.com/kggraphics_" target="_blank" className="text-blue-600 font-semibold dark:text-blue-400">
             @kggraphics_
           </a>
         </p>
@@ -77,10 +85,18 @@ function Contact() {
   );
 }
 
+// App Component
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    document.documentElement.classList.toggle("dark", theme === "light");
+  };
+
   return (
     <>
-      <NavigationBar />
+      <NavigationBar toggleTheme={toggleTheme} />
       <AboutMe />
       <Portfolio />
       <Contact />
@@ -89,4 +105,4 @@ function App() {
 }
 
 ReactDOM.createRoot(document.getElementById("react-root")).render(<App />);
-    
+                      
