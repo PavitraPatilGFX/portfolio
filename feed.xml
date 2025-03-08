@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>KGGRAPHICS</title>
+    <link href="https://pavitrapatilgfx.github.io/portfolio/feed.xml" rel="self" />
+    <link href="https://pavitrapatilgfx.github.io/portfolio" />
+    <updated>2025-03-08T17:36:36+05:30</updated>
+    <author>
+        <name>Pavitra Patil</name>
+    </author>
+    <id>https://pavitrapatilgfx.github.io/portfolio</id>
+
+    <entry>
+        <title>My Work</title>
+        <author>
+            <name>Pavitra Patil</name>
+        </author>
+        <link href="https://pavitrapatilgfx.github.io/portfolio/my-works.html"/>
+        <id>https://pavitrapatilgfx.github.io/portfolio/my-works.html</id>
+
+        <updated>2025-03-08T13:15:36+05:30</updated>
+            <summary>
+                <![CDATA[
+                    The Ultimate Burger. Hot & Ready.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <div  class="gallery-wrapper">
+    <div class="gallery" data-columns="3">
+      <figure class="gallery__item">
+      <a href="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/Burger-Poster.png" data-size="1080x1080">
+        <img decoding="async" loading="lazy" src="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/Burger-Poster-thumbnail.png" height="720" width="720" alt="Burger Poster 🍔" >
+      </a>
+      <figcaption>The Ultimate Burger.</figcaption>
+    </figure><figure class="gallery__item">
+      <a href="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/Pizza-Poster.png" data-size="1080x1080">
+        <img decoding="async" loading="lazy" src="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/Pizza-Poster-thumbnail.png" height="720" width="720" alt="Pizza Poster 🍕" >
+      </a>
+      <figcaption>Hot & Ready.</figcaption>
+    </figure>
+    </div>
+  </div>
+            ]]>
+        </content>
+    </entry>
+</feed>
