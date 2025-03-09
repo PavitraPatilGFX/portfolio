@@ -3,12 +3,62 @@
     <title>KGGRAPHICS</title>
     <link href="https://pavitrapatilgfx.github.io/portfolio/feed.xml" rel="self" />
     <link href="https://pavitrapatilgfx.github.io/portfolio" />
-    <updated>2025-03-08T17:36:36+05:30</updated>
+    <updated>2025-03-09T12:59:55+05:30</updated>
     <author>
         <name>Pavitra Patil</name>
     </author>
     <id>https://pavitrapatilgfx.github.io/portfolio</id>
 
+    <entry>
+        <title>New Portfolio is rolling out!</title>
+        <author>
+            <name>Pavitra Patil</name>
+        </author>
+        <link href="https://pavitrapatilgfx.github.io/portfolio/new-portfolio-is-rolling-out.html"/>
+        <id>https://pavitrapatilgfx.github.io/portfolio/new-portfolio-is-rolling-out.html</id>
+
+        <updated>2025-03-09T12:59:55+05:30</updated>
+            <summary>
+                <![CDATA[
+                    🚀 Portfolio Update – Plastic UI (Release v1) A fresh new look, better performance, and exciting features! This update introduces a sleek UI upgrade, a&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="🚀-portfolio-update--plastic-ui-release-v1">🚀 Portfolio Update – Plastic UI (Release v1)</h1>
+<blockquote>
+<p><strong>A fresh new look, better performance, and exciting features!</strong><br>This update introduces a sleek UI upgrade, a brand-new blog section, social media integration, and major optimizations for a smoother experience.  </p></blockquote>
+<h2 id="✨-ui-enhancements">✨ UI Enhancements</h2>
+<ul>
+<li>Introduced <strong>Chahk</strong> as the homepage highlight for a striking first impression.  </li>
+<li>Added <strong>icon support</strong> to enhance visual appeal and accessibility.  </li>
+<li>Upgraded portfolio typography to <strong>Maven Pro</strong> for a sleek, modern aesthetic.  </li>
+<li>Improved overall <strong>color scheme</strong> for better contrast and readability.</li>
+</ul>
+<h2 id="⚡-performance--optimization">⚡ Performance &amp; Optimization</h2>
+<ul>
+<li>Migrated to <strong>Static Site Generation (SSG)</strong> for faster load times and improved performance.  </li>
+<li>Implemented <strong>dynamic image handling</strong> for optimized media delivery.  </li>
+<li>Enabled <strong>lazy image loading</strong> to enhance page speed and efficiency.</li>
+</ul>
+<h2 id="📂-repository-overhaul">📂 Repository Overhaul</h2>
+<ul>
+<li><strong>Reorganized folder and file structure</strong> for better maintainability and scalability.</li>
+</ul>
+<h2 id="🆕-new-features">🆕 New Features</h2>
+<ul>
+<li><strong>Blog Section</strong> is now live – explore, read, and share insights!  </li>
+<li>Integrated <strong>social media icons and links</strong>, starting with <strong>Instagram</strong>.</li>
+</ul>
+<h2 id="❌-deprecated-features">❌ Deprecated Features</h2>
+<ul>
+<li>Removed <strong>OLED, Light, and Dark themes</strong> due to technical constraints.  </li>
+<li>Discontinued the <strong>website startup loading screen</strong> to streamline the user experience.</li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>My Work</title>
         <author>
