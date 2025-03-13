@@ -3,7 +3,7 @@
     <title>KGGRAPHICS</title>
     <link href="https://pavitrapatilgfx.github.io/portfolio/feed.xml" rel="self" />
     <link href="https://pavitrapatilgfx.github.io/portfolio" />
-    <updated>2025-03-13T10:45:21+05:30</updated>
+    <updated>2025-03-13T11:49:29+05:30</updated>
     <author>
         <name>Pavitra Patil</name>
     </author>
@@ -71,7 +71,7 @@
         <updated>2025-03-08T13:15:36+05:30</updated>
             <summary>
                 <![CDATA[
-                    Square Posters The Ultimate Burger. Hot & Ready. YouTube Thumbnails&nbsp; (Coming Soon)
+                    Square Posters The Ultimate Burger. Hot & Ready. Minecraft Style Logo Note: This Page contains, copyrighted content of Mojang Studios&nbsp; Minecraft Update Style Logo
                 ]]>
             </summary>
         <content type="html">
@@ -97,13 +97,24 @@
     </div>
   </div>
 
-    <h2 id="youtube-thumbnailsandnbsp">
-      YouTube Thumbnails&nbsp;
+    <h2 id="minecraft-style-logo">
+      Minecraft Style Logo
     </h2>
 
   <p>
-    (Coming Soon)
+    Note: This Page contains, copyrighted content of Mojang Studios&nbsp;
   </p>
+
+  <div  class="gallery-wrapper">
+    <div class="gallery" data-columns="3">
+      <figure class="gallery__item">
+      <a href="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/creaking_update_logo.png" data-size="2048x661">
+        <img decoding="async" loading="lazy" src="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/creaking_update_logo-thumbnail.png" height="232" width="720" alt="Creaking Update " >
+      </a>
+      <figcaption>Minecraft Update Style Logo</figcaption>
+    </figure>
+    </div>
+  </div>
             ]]>
         </content>
     </entry>
