@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://pavitrapatilgfx.github.io/portfolio/sitemap.xml

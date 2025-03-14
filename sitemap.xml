@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://pavitrapatilgfx.github.io/portfolio/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://pavitrapatilgfx.github.io/portfolio/</loc>
+</url>
+<url>
+<loc>https://pavitrapatilgfx.github.io/portfolio/my-works.html</loc>
+<lastmod>2025-03-14T12:39:50+05:30</lastmod>
+<image:image>
+<image:loc>https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/Burger-Poster.png</image:loc>
+<image:title><![CDATA[Burger Poster 🍔]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/Pizza-Poster.png</image:loc>
+<image:title><![CDATA[Pizza Poster 🍕]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/berry-poster.png</image:loc>
+<image:title><![CDATA[Berry Juice Poster 🍇]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/creaking_update_logo.png</image:loc>
+<image:title><![CDATA[Creaking Update ]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://pavitrapatilgfx.github.io/portfolio/new-portfolio-is-rolling-out.html</loc>
+<lastmod>2025-03-14T12:42:47+05:30</lastmod>
+</url>
+</urlset>
