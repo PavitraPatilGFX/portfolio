@@ -3,7 +3,7 @@
     <title>KGGRAPHICS</title>
     <link href="https://pavitrapatilgfx.github.io/portfolio/feed.xml" rel="self" />
     <link href="https://pavitrapatilgfx.github.io/portfolio" />
-    <updated>2025-03-13T11:54:11+05:30</updated>
+    <updated>2025-03-14T12:42:47+05:30</updated>
     <author>
         <name>Pavitra Patil</name>
     </author>
@@ -28,7 +28,12 @@
                 <h1 id="🚀-portfolio-update--plastic-ui-release-v1">🚀 Portfolio Update – Plastic UI (Release v1)</h1>
 <h3 id="📌-note-our-portfolio-is-currently-under-development-please-check-back-soon-for-updates-👷">📌 <strong>Note:</strong> Our portfolio is currently under development. Please check back soon for updates. 👷</h3>
 <blockquote>
-<p><strong>A fresh new look, better performance, and exciting features!</strong><br>This update introduces a sleek UI upgrade, a brand-new blog section, social media integration, and major optimizations for a smoother experience.  </p></blockquote>
+<p><strong>A fresh new look, better performance, and exciting features!</strong><br>This update introduces a sleek UI upgrade, a brand-new blog section, social media integration, and major optimizations for a smoother experience.   with some new projects!</p></blockquote>
+<h2 id="💎-brand-new-projects">💎 Brand New Projects!</h2>
+<ol>
+<li>Berry Juice Poster.</li>
+<li>Creaking Update Logo</li>
+</ol>
 <h2 id="✨-ui-enhancements">✨ UI Enhancements</h2>
 <ul>
 <li>Introduced <strong>Chahk</strong> as the homepage highlight for a striking first impression.  </li>
@@ -71,7 +76,7 @@
         <updated>2025-03-08T13:15:36+05:30</updated>
             <summary>
                 <![CDATA[
-                    Square Posters The Ultimate Burger. Hot & Ready. Minecraft Style Logo Note: This section of the page contains copyrighted content owned by Mojang Studios. We&hellip;
+                    Square Posters The Ultimate Burger. Hot & Ready. Product Manipulation. Minecraft Style Logo Note: This section of the page contains copyrighted content owned by Mojang&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -93,6 +98,11 @@
         <img decoding="async" loading="lazy" src="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/Pizza-Poster-thumbnail.png" height="720" width="720" alt="Pizza Poster 🍕" >
       </a>
       <figcaption>Hot & Ready.</figcaption>
+    </figure><figure class="gallery__item">
+      <a href="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/berry-poster.png" data-size="1080x1080">
+        <img decoding="async" loading="lazy" src="https://pavitrapatilgfx.github.io/portfolio/media/posts/1/gallery/berry-poster-thumbnail.png" height="720" width="720" alt="Berry Juice Poster 🍇" >
+      </a>
+      <figcaption>Product Manipulation.</figcaption>
     </figure>
     </div>
   </div>
